@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #wrap {
+        width: 500px;
+        background: gray;
+      }
+      ul {
+        list-style: none;
+      }
+
+      #header {
+        background: red;
+      }
+      #header h1 {
+        float: left;
+      }
+      #header ul {
+        float: right;
+      }
+      #header ul li {
+        float: left;
+      }
+      #header ul li a {
+        padding: 10px;
+        background: yellow;
+        display: block;
+      }
+      #container {
+        background-color: rgb(159, 168, 248);
+      }
+      #container nav {
+        float: left;
+        width: 100px;
+        background: #fff000;
+      }
+      #container nav li {
+        float: left;
+        list-style: none;
+        background-color: #970c80;
+        margin:0 3px;
+      }
+      #container section {
+        float: left;
+        width: 300px;
+      }
+      #container aside {
+        float: left;
+        width: 100px;
+        background: #00ff95;
+      }
+      #footer {
+        background-color: aqua;
+      }
+      .clear::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header" class="clear">
+        <h1>Logo</h1>
+        <ul>
+          <li><a href="">test</a></li>
+          <li><a href="">test</a></li>
+          <li><a href="">test</a></li>
+          <li><a href="">test</a></li>
+        </ul>
+      </header>
+      <div id="container" class="clear">
+        <nav>
+          <ul>
+            <li><a href="">m1</a></li>
+            <li><a href="">m1</a></li>
+            <li><a href="">m1</a></li>
+          </ul>
+        </nav>
+        <section>section</section>
+        <aside>aside</aside>
+      </div>
+      <footer id="footer">footer</footer>
+    </div>
+  </body>
+</html>

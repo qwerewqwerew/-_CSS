@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vw VS %</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 100vw;
+        background: ivory;
+      }
+      span {
+        display: block;
+        color: lawngreen;
+      }
+      .per {
+        width: 100%;
+        background: lightcoral;
+      }
+      .per p {
+        width: 50%;
+        background: green;
+      }
+      .per p span {
+        width: 100%;
+        background: yellow;
+      }
+
+      .vw {
+        width: 50vw;
+        background: lightslategray;
+        height: 300px;
+      }
+      .vw p{
+        width:50vw;
+        background:red;
+        height:200px;
+      }
+      .vw span{
+        width: 100vw;
+        background: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="per">
+      <p>부모너비기준:percent <span>percent</span></p>
+    </div>
+    <div class="vw">
+      <p>웹브라우저너비기준:vw <span>vw</span></p>
+    </div>
+  </body>
+</html>

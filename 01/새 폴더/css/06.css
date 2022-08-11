@@ -1,0 +1,64 @@
+@import url(reset.css);
+
+#wrap {
+  width: 800px;
+  margin: 0 auto;
+}
+h1 {
+  background: url(../images/speaker.png) no-repeat left center;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 0 0 60px;
+  margin-top: 50px;
+}
+/* 게시판 검색창 */
+#search_wrap fieldset {
+  float: right;
+  margin-bottom: 10px;
+  border: 0;
+}
+#search_wrap select,
+#search_wrap input {
+  font-size: 14px;
+  float: left;
+  margin-right: 2px;
+  border: 1px solid #aaa;
+}
+#search_wrap select {
+  height: 24px;
+}
+#search_wrap input {
+  height: 22px;
+  line-height: 22px;
+  width: 150px;
+}
+#search_wrap button {
+  height: 24px;
+  width: 60px;
+  border: 0;
+  background: #ff9900;
+  color: #ffffff;
+}
+#search_wrap button:hover {
+  cursor: pointer;
+  color: #333333;
+}
+/* 게시판 목록 */
+#board > div {
+  border-bottom: 1px dotted #ff9900;
+}
+#board > div :hover {
+  background: #ffffee;
+}
+#board > div.first {
+  background: #ff9900;
+  border-radius: 10px 10px 0 0;
+  color: #ffffff;
+}
+#board>div.first >div{
+  width: 100px;
+  line-height: 50px;
+  height:50px;
+  text-align: center;
+  float: left;
+}

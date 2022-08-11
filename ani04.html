@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      position:
+      absolute;
+      left:70px;
+      top:70px;
+      width:60px;
+      height:60px;
+      background:
+      red;
+      border:5px solid pink;
+      border-radius:35px;
+      offset:
+      path("M21 193C35.5 115.5 83.6 -13.3 160 91.5C255.5 222.5 330.5 434 358.5 277.5C386.5 121 682 -102 644.5 54C607 210 808.5 324 710 394.5C611.5 465 516.5 386.5 358.5 496C200.5 605.5 77 442 0.5 349.5") auto;
+      animation: moveto 5s cubic-bezier(0.69, 1.2, 0, 0.59) infinite;
+    }
+
+    @keyframes moveto{
+      0%{offset-distance:0%;}
+      100%{offset-distance:100%;}
+    }
+
+    /* <svg width="738" height="533" viewBox="0 0 738 533" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 193C35.5 115.5 83.6 -13.3 160 91.5C255.5 222.5 330.5 434 358.5 277.5C386.5 121 682 -102 644.5 54C607 210 808.5 324 710 394.5C611.5 465 516.5 386.5 358.5 496C200.5 605.5 77 442 0.5 349.5" stroke="black"/>
+</svg>
+ */
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="box"></div>
+  </div>
+</body>
+</html>

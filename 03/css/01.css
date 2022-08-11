@@ -1,0 +1,54 @@
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  color: #fff;
+}
+#header {
+  background: red;
+  line-height: 40px;
+}
+#wrap {
+  max-width: 960px;
+  margin: auto;
+  color: #fff;
+}
+#content {
+  background: greenyellow;
+  float: left;
+  width: 600px;
+}
+#aside {
+  background: green;
+  float: right;
+  width: 340px;
+}
+#container:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+#footer {
+  background-color: #a3a3a3;
+  line-height: 30px;
+  margin-top: 50px;
+}
+
+/* 960이하의 화면에서 미디어 쿼리작성 */
+@media screen and (max-width:960px) {
+  /* #wrap{width:100%;} */
+  /* wrap 너비를 100으로 자식이 떨어짐 
+    (부분/전체)*100 가변크기공식
+  */
+  #content{/* (600/960)*100 */width: 62.5%;}
+  #aside{width: 35%;}
+}
+@media screen and (max-width:480px) {
+  /* #wrap{width:100%;} */
+  #content{width:100%; float: none;}
+  #aside{width:100%; float: none;}
+}

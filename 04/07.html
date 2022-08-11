@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>기본박스</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <style>
+      .container {
+        width: 80%;
+        height: 150px;
+        display: flex;
+        align-items:center;
+      }
+      .box{
+        width:60px;
+        height:60px;
+        margin:5px;
+      }
+      #box1{
+        /* flex-basis 기본너비 */
+        flex-basis:auto;
+        flex-basis:0;
+        flex-basis:100px;
+        flex-basis:200px;
+        flex-basis:10%;        
+      }
+      #box2{
+        /* flex-grow */
+        flex-grow:1;
+        flex-grow:5;
+        flex-grow:0.5;
+      }
+      #box3{
+        flex-shrink:8;
+      }
+      #box4{
+        /* basis에 단위 안쓰면 % */
+        flex:1 5 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="opt1">
+      <div class="box" id="box1">
+        <p>1</p>
+      </div>
+      <div class="box" id="box2">
+        <p>2</p>
+      </div>
+      <div class="box" id="box3">
+        <p>3</p>
+      </div>
+      <div class="box" id="box4">
+        <p>4</p>
+      </div>
+      <div class="box" id="box5">
+        <p>5</p>
+      </div>
+    </div>
+  </body>
+</html>

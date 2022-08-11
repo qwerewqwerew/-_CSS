@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+<meta charset="utf-8">
+<title>테두리 모양</title> 
+<style type="text/css">
+	body { background:url(img/bg_grid.png); }
+  .brdr{
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+    /* 너비 500px 수평정렬 */
+    width:500px;
+    margin:0 auto;
+  }
+  p{
+    width:120px;
+    display: inline-block;  
+    padding:10px;
+    text-align: center;
+    background-color: aliceblue;
+    font:23px Times;
+    margin:10px 8px;
+  }
+  .p1{border:13px solid ;}
+  .p2{border:13px dotted;}
+  .p3{border:13px dashed;}
+  .p4{border:13px double;}
+  .p5{border:13px groove;}
+  .p6{border:13px ridge;}
+  .p7{border:13px inset;}
+  .p8{border:13px outset;}
+</style>
+</head> 
+<body>
+    <div class="brdr">
+        <p class="p1">solid</p>
+        <p class="p2">dotted</p>
+        <p class="p3">dashed</p>
+        <p class="p4">double</p>
+        <p class="p5">groove</p>
+        <p class="p6">ridge</p>
+        <p class="p7">inset</p>
+        <p class="p8">outset</p>
+    </div>
+</body> 
+</html>

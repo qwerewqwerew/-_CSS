@@ -1,0 +1,54 @@
+body {
+  margin-top: 30px;
+}
+h1 {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-style: italic;
+  font-size: 3em;
+}
+#bookList {
+  position: relative;
+  background: no-repeat url(../images/book_bg.png);
+  background-position: -1px 17px;
+  width: 476px;
+  height: 246px;
+  border: 5px solid #dbdbdb;
+  margin: auto;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #666;
+  margin-top: 30px;
+  padding-left: 22px;
+  padding-top: 25px;
+}
+
+#bookList ul {
+  padding: 0;
+}
+
+#bookList ul li {
+  float: left;
+}
+#bookList ul li * {
+  display: block;
+}
+.frame {
+  margin-right: 63px;
+}
+
+#bookList ul li a:hover img {
+  box-shadow: 0 0 50px #009900;
+}
+/* web sticker */
+#bookList ul li > a > span {
+  /* position: relative; */
+}
+#bookList ul li > a > span .hit {
+  position: absolute;
+  background: url(../images/sticker.png) no-repeat;
+  width: 50px;
+  height:50px;
+  top:0;
+  left:0;
+}

@@ -1,0 +1,36 @@
+.m_width {max-width: 1400px;margin: 0 auto;} 
+/* 상단메뉴바 */
+#header { width: 100%; } 
+#gnb { width: 100%; height: 94px; background: #ffffff; position: relative; z-index: 8; } 
+#nav li { height: auto; margin: 0 38px; } 
+#nav li > a { display: block; color: #333333; line-height: 94px; text-align: center; font-size: 1.2em; font-weight: bold; } 
+#nav li a:hover { color: #e95a65; } 
+#nav li#freesamLogo { width: 181px; margin: 0 0 0 25px; } 
+#nav li .m_width .m1_tit { padding: 0 20px 0 0; } 
+#nav li .m_width .m1_tit img { display: block; margin: 20px auto; width: 135px; height: 135px; } 
+#nav li div.width100 { position: absolute; top: 93px; left: 0px; background: #edeaea; width: 100%; border-bottom: 1px solid transparent; box-shadow: 0 0 0 rgba(0, 0, 0, 0); height: 0px; overflow: hidden; padding: 0 0; transition: all 0.5s; z-index: 2; } 
+/* #nav>li 로 선택해도 안됨 #nav li 로 해야 1,2depth 동시에 선택됨*/
+#nav li:hover div.width100 { height: auto; padding: 20px 0; border-bottom: 1px solid #afaeb5; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3); } 
+
+/* 2depth start */
+#gnb li ul li { width: 200px; margin: 0; border-left: 1px solid #c9c9c9; padding: 20px; } 
+#gnb li ul li h2 { font-size: 1.5em; font-weight: bold; text-align: center; color: #e95a65; padding-top: 2px; } 
+#gnb li ul li dl dt a { color: #333333; font-size: 1em; font-weight: bold; line-height: 180%; } 
+#gnb li ul li dl dd a { color: #777777; font-size: 0.8em; font-weight: bold; line-height: 170%; padding-left: 10px; } 
+#gnb li ul li h3 a { color: #097a84; font-weight: bold; line-height: 200%; margin-bottom: 3px; } 
+
+.width100::before { position: absolute; width: 100%; height: 100%; content: ""; background-color: #a8dee3; top: 0; z-index: -1; right: calc(50% + 30rem); } 
+
+#main { width: 100%; } 
+.main_banner { background: url(https://img.freepik.com/free-photo/red-podium-with-lantern-chinese-new-year-gift-box-product-stand-podium-background-pedestal-3d-rendering_56104-1149.jpg?w=740&t=st=1658729389~exp=1658729989~hmac=ca8c4e16a68da6a93b85f04c4a45fcb0b63f629d37ef2335361163e6a22ae73c)
+ no-repeat; background-size: cover; width: 100%; height: 100vh; } 
+/* .m_width 를 기준으로 한다 . */
+.main_banner > .m_width {position: relative;height: 100%;} 
+/* 부모요소를 기준으로 중앙정렬시킨다 -> relative 로 원래 위치를 찍어놓고 거기서 부터 중앙정렬!! */
+.main_banner ul { position: absolute; width: 600px; height: 200px; background: #9ad2a891; left: 50%; top: 50vh; transform: translate(-50%, -50%); } 
+.main_banner ul li { position: relative; width: calc(34.33% - 10px); height: 200px; background-color: #b6b6b6; color: #097a84; font-size: 4em; text-align: center; line-height: 200px; } 
+.main_banner ul li:nth-child(2) { margin: 0 5px; } 
+.main_banner ul li::before { position: absolute; content: ""; width: 0%; height: 6px; background: #714ed2; left: 0; transition: width 0.5s; bottom: 0;  transform: translateX(-50%);} 
+.main_banner ul li::after { position: absolute; content: ""; width: 0%; height: 6px; background: #714ed2; left: 50%;  transition: width 0.5s 0.2s; top: 0; transform: translateX(-50%); } 
+.main_banner ul li:hover::before { width: 100%;  } 
+.main_banner ul li:hover::after { width: 100%;  } 

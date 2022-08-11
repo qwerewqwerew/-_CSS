@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>gradient의 표현</title>
+    <style type="text/css">
+      p {
+        padding: 60px;
+      }
+      .g1 {
+        background: red;
+        background: linear-gradient(red, yellow, green);
+      }
+      .g2 {
+        background: linear-gradient(to right, red, yellow, purple, green);
+      }
+      .g3 {
+        background: linear-gradient(to bottom right, red, yellow, green);
+      }
+      .g4 {
+        background: linear-gradient(-200deg, red, yellow, green);
+      }
+      .g5 {
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 255, 0),
+          rgba(0, 0, 255, 0.8)
+        );
+      }
+      .g6 {
+        background: repeating-linear-gradient(brown, yellow 15%, green 30%);
+      }
+      .g7 {
+        background: radial-gradient(red, yellow, green);
+      }
+      .g8 {
+        background: radial-gradient(red 5%, yellow 15%, green 60%);
+        background: radial-gradient(
+          closest-side at 35% 35%,
+          red 5%,
+          yellow 15%,
+          green 60%
+        );
+      }
+      .g9 {
+        background: radial-gradient(circle,
+          red,
+          rgba(0, 0, 255, 0),
+          rgba(0, 0, 255, 0.8)
+        );
+      }
+      .g10 {
+        /* colorzilla generator */
+        background: #e52d77;
+        /* vendor prefix
+          실험적인 기술을 브라우저에서 사용하기 위한 접두어
+          -webkit- : 크롬, 사파리 , 엣지
+          -o-  : 오페라
+          -moz- :  파이어폭스
+          -ms- : 익스
+        */
+        background: -moz-linear-gradient(
+          left,
+          #e52d77 0%,
+          #6b4711 30%,
+          #28d330 51%,
+          #e82559 61%,
+          #c6976b 100%
+        );
+        background: -webkit-linear-gradient(
+          left,
+          #e52d77 0%,
+          #6b4711 30%,
+          #28d330 51%,
+          #e82559 61%,
+          #c6976b 100%
+        );
+        background: linear-gradient(
+          to right,
+          #e52d77 0%,
+          #6b4711 30%,
+          #28d330 51%,
+          #e82559 61%,
+          #c6976b 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e52d77', endColorstr='#c6976b',GradientType=1 );
+      }
+    </style>
+  </head>
+  <body>
+    <p class="g1">
+      It's impossible not only starting good but also keeping it firm!!
+    </p>
+    <p class="g2">
+      It's impossible not only starting good but also keeping it firm!!
+    </p>
+    <p class="g3">
+      It's impossible not only starting good but also keeping it firm!!
+    </p>
+    <p class="g4">
+      It's impossible not only starting good but also keeping it firm!!
+    </p>
+    <p class="g5">
+      It's impossible not only starting good but also keeping it firm!!
+    </p>
+    <p class="g6">
+      It's impossible not only starting good but also keeping it firm!!
+    </p>
+    <p class="g7">
+      It's impossible not only starting good but also keeping it firm!!
+    </p>
+    <p class="g8">
+      It's impossible not only starting good but also keeping it firm!!
+    </p>
+    <p class="g9">
+      It's impossible not only starting good but also keeping it firm!!
+    </p>
+    <p class="g10">
+      It's impossible not only starting good but also keeping it firm!!
+    </p>
+  </body>
+</html>

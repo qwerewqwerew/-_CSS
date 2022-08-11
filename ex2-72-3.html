@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position 으로 중앙정렬</title>
+  <style>
+    .container{
+      /* 
+        1. 요소의 너비를 준다
+        2. position 을 준다
+        3. left:50% 이동시킨다
+        4. 너비의 반 을 margin-left 의 - 속성값으로 준다
+      */
+      background: red;
+      width: 500px;
+      height:500px;
+      position:relative;
+      left:50%;
+      margin-left:-250px ;      
+    }
+    .box1{
+      position:absolute;
+      background: yellow;
+      top:50%;
+      left:50%;
+      width: 50px;
+      height: 50px;
+      /* calc 
+      css에서 사칙연산가능 
+      %끼리 연산X
+      연산자 사이 공백 
+      */
+      margin-top: calc(-50px / 2);
+      margin-left: calc(-50px / 2);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+  </div>
+</body>
+</html> 

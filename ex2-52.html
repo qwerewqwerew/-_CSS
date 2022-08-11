@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>요소의 바깥 여백</title>
+    <style type="text/css">
+      body {
+        background: url(img/bg_grid.png);
+      }
+      p{
+        background: rgba(0,100,200,.3);
+        width:600px;
+        padding:10px;
+        /* 상단마진겹칩현상발생
+          상하 마진 적용시 위/아래 한쪽방향으로만 코딩
+        */
+        margin:20px;
+        /* 큰값으로 합체 */
+        margin-top:50px;
+      }
+      .art2{
+        /* 마진으로 중앙정렬은 수평만 가능
+          1. 너비가 있다.
+          2. 좌우를 auto 로 준다.
+        */
+        width:300px;
+        margin: 0 auto;
+        
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      유래없이 뜨거운 날씨이다. 섭씨 38도를 웃도는 온도에서 에어콘은 이제 살기
+      위한 도구가 되었다.
+    </p>
+    <p class="art2">
+      달걀을 사다 놓기만 해도 병아리로 부화된다는 농담같은 이야기가 현재
+      대한민국의 실화다.
+    </p>
+    <p>
+      드디어 섭씨 40도가 넘었다. 엄마 뱃속보다 뜨거운 날씨, 감사해야 할까? 해가
+      뜨거울 뿐인데 오존층이 파괴되어 오존주의보가 발령되었다.
+    </p>
+  </body>
+</html>

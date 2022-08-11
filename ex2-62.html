@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>ANIMATION</title>
+    <style type="text/css">
+      p {
+        width: 100px;
+        height: 100px;
+        background: brown;
+        animation-name: mango;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 3;
+        /* 애니메이션 종료후 반대방향 */
+        animation-direction: alternate;
+        /* 일단정지 */
+        animation-play-state:running ;
+      }
+      p:hover{
+        animation-play-state:paused ;
+
+      }
+      @keyframes mango {
+        0% {
+          background: green;
+          width: 150px;
+          transform: translate(0,0);
+        }
+        50% {
+          background: blue;
+          width: 50px;
+          transform: translate(0,100px);
+
+        }
+        100% {
+          background-color: blanchedalmond;
+          transform: translate(100px,0);
+        }
+      }
+      .ball{
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        animation: ball 5s 1s infinite alternate cubic-bezier(0.6, 0.39, 0.94, 1.63);
+        
+      }
+      @keyframes ball{
+        0%{
+          transform: translate(200px, 200px);
+        }
+        100%{
+          transform: translate(0px, 0px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p>Animation..</p>
+    <div class="ball"></div>
+  </body>
+</html>

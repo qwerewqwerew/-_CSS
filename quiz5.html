@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>이미지, 색상, 글자 투명도 조정하기</title>
+    <meta charset="UTF-8" />
+    <style type="text/css">
+      body,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #ccc url(img/bg_gray.png) no-repeat;
+      }
+      div {
+        background: url(img/circle.png) no-repeat;
+        width: 530px;
+        height: 424px;
+        margin: 0 auto;
+        opacity: 0.8;
+        padding-top: 150px;
+        padding-left: 20px;
+      }
+      .textBox {
+        border-radius: 20px;
+        background: #ccc;
+        width: 25%;
+        margin:0 auto 130px;
+        padding:20px;
+      }
+      .people{
+        color:rgba(255,255,255,.7);
+        font:3em "Arial Black";
+        /* padding-top:130px; */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <p class="textBox">
+        Freedom is not worth having if it does not include the freedom to make
+        mistakes.
+      </p>
+      <p class="people">- Mahatma Gandhi -</p>
+    </div>
+  </body>
+</html>
